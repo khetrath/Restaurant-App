@@ -38,6 +38,7 @@ namespace RestaurantApp
 
             restaurants.Add(new Restaurant(4, "Huguosi Snacks", "Snacks", 4.2));
             restaurants.Add(new Restaurant(5, "Haidilao Hot Pot", "Hot Pot", 4.8));
+            restaurants.Add(new Restaurant(6, "ร้านส้มตำป้าศรี", "Thai/Isan Cuisine", 4.9));
 
             Console.WriteLine("--- รายชื่อร้านอาหารทั้งหมด ---");
             foreach (var item in restaurants)
