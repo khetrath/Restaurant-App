@@ -4,13 +4,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Restaurant_App
+namespace RestaurantApp
 {
-    internal class Program
+    public class Restaurant
     {
-        static void Main(string[] args)
-        {
-        }
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Type { get; set; }
+        public double Rating { get; set; }
 
+        public Restaurant(int id, string name, string type, double rating)
+        {
+            Id = id;
+            Name = name;
+            Type = type;
+            Rating = rating;
+        }
     }
 }
