@@ -44,6 +44,16 @@ namespace RestaurantApp
             {
                 Console.WriteLine($"[{item.Id}] {item.Name,-22} | ประเภท: {item.Type,-18} | คะแนน: {item.Rating}/5.0");
             }
+            int totalCount = restaurants.Count;
+            double avgRating = restaurants.Average(r => r.Rating);
+
+            Console.WriteLine("\n-------------------------------------------");
+            Console.WriteLine($"จำนวนร้านอาหารทั้งหมด : {totalCount} ร้าน");
+            Console.WriteLine($"คะแนนเฉลี่ยของทุกร้าน   : {avgRating:F2} / 5.0");
+            Console.WriteLine("-------------------------------------------");
+
+            Console.WriteLine("\nกดปุ่มใดก็ได้เพื่อออกจากโปรแกรม...");
+            Console.ReadKey();
         }
     }
 }
